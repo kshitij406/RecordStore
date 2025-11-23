@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<top_albums>
+  <record rank="1">
+    <name>Destinée</name>
+    <artist>Aya Nakamura</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/5cb81e22714a46a4eba8d04c88d9e3cb/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="2">
+    <name>Clair Obscur: Expedition 33 (Original Soundtrack)</name>
+    <artist>Lorien Testard</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/f20170f882ac3751d1ec3d8e8900b153/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="3">
+    <name>Remixed Sides</name>
+    <artist>Phil Collins</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/2d6a03f57098b6354d18782f28bb8476/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="4">
+    <name>Everything I Need</name>
+    <artist>Aynsley Lister</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/4363ebe901c5d87dbda342d64f132f41/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="5">
+    <name>Wicked: For Good – The Soundtrack</name>
+    <artist>Wicked Movie Cast</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/b84e3b2ac2e7a2f32cf633402cd8994d/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="6">
+    <name>La fuite en avant</name>
+    <artist>Orelsan</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/7a9d1807d77676a4f182dba7ca09c122/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="7">
+    <name>El Mal Querer</name>
+    <artist>ROSALÍA</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/10440b4fc8b5b8f3392702a2ef213ab1/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="8">
+    <name>The Singles Collection</name>
+    <artist>No Doubt</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/97b81fddd1fa280adb7ebc41c5a255e6/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="9">
+    <name>A french songbook</name>
+    <artist>Antoine Delaunay Quintet</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/adc905c53add44f0a470278363d6c4aa/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="10">
+    <name>Inner Sanctum (Live at The Royal Opera House, 2018)</name>
+    <artist>Pet Shop Boys</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/1cb5b63a60d8ae4738ad56b51822f228/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+</top_albums>
