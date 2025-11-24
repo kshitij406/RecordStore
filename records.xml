@@ -1,1 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
+
+<!ELEMENT top_albums (record+)>
+<!ELEMENT record (name,artist,cover_medium)>
+<!ATTLIST record rank CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT artist (#PCDATA)> 
+<!ELEMENT cover_medium (#PCDATA)>

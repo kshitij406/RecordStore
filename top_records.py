@@ -52,6 +52,6 @@ for rec in records:
 # Turn the tree into an XML file
 tree = ET.ElementTree(root)
 ET.indent(tree, space="  ", level=0)  
-tree.write("top_tracks.xml", encoding="utf-8", xml_declaration=True)
+tree.write("top_records.xml", encoding="utf-8", xml_declaration=True)
 
     
