@@ -12,13 +12,11 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
         <title>Record Collection</title>
-
-        <!-- CSS is one level up from XML -->
         <link rel="stylesheet" type="text/css" href="../styles.css"/>
       </head>
 
       <body>
-        <!-- Top Navigation (same as home) -->
+        <!-- Top Navigation -->
         <nav class="topnav">
           <!-- Logo -->
           <div class="logo">
@@ -44,7 +42,7 @@
         <!-- MAIN CONTENT -->
         <main class="page">
 
-          <!-- Hero section: same styling as home hero -->
+          <!-- Hero section -->
           <section class="hero">
             <div class="hero-inner">
               <div class="hero-text">
@@ -61,7 +59,6 @@
               </div>
 
               <div class="hero-image-wrapper">
-                <!-- reuse the same hero image or change the file if you want -->
                 <img src="../images/collection.gif" alt="Record wall" class="hero-record-image"/>
               </div>
             </div>
@@ -94,8 +91,6 @@
                       <p class="product-artist">
                         <xsl:value-of select="artist"/>
                       </p>
-
-                      <!-- Price will be empty unless you add <price> in XML -->
                       <p class="product-price">
                         £<xsl:value-of select="price"/>
                       </p>
