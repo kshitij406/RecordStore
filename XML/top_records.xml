@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<top_albums>
+  <record rank="1">
+    <name>Fairy Tale</name>
+    <artist>Sayaa</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/6abe1d8b1ec575146bf768d46744142e/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="2">
+    <name>A Star Is Born Soundtrack</name>
+    <artist>Lady Gaga</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/88a8288e14f61ffa39c14ac2ef9210d8/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="3">
+    <name>Douce Nuit</name>
+    <artist>Glorious</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/69abca30677e02df981132427ba642bd/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="4">
+    <name>1 (Remastered)</name>
+    <artist>The Beatles</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/c65b3bd84e81056e060be144381c06c8/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="5">
+    <name>DRAMA</name>
+    <artist>arøne</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/84836ed2ace0a420977b7dc842c2e573/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="6">
+    <name>Greek Music (Greece)</name>
+    <artist>Mykonos Ensemble</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/35c238d479747cdec16266f105b9c823/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="7">
+    <name>Mind Control</name>
+    <artist>Stephen Marley</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/09e84765a7cb7a285deaf6a99f162d62/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="8">
+    <name>ALCHIMIE</name>
+    <artist>Nesly</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/59ab14b5ff3a60db3dc8f310405d4dfd/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="9">
+    <name>Reiki</name>
+    <artist>Sakura Dream</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/31a2f66619457aaddd1d82b149c233fa/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+  <record rank="10">
+    <name>Best Of : Les 15 titres incontournables</name>
+    <artist>IMAGES</artist>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/2dbbcbb2bd8b53b4eec27466d3b47bde/250x250-000000-80-0-0.jpg</cover_medium>
+  </record>
+</top_albums>

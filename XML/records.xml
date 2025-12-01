@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/xsl" href="records.xsl"?>
+
+<albums>
+  <album>
+    <title>Grace</title>
+    <artist>Jeff Buckley</artist>
+    <id>11336428</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/57dd4754a69acaaf3a8a82f7fd1b8ad3/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>The Dark Side of the Moon</title>
+    <artist>Pink Floyd</artist>
+    <id>12114240</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/e635a8510c1a74bc089b3566ebbb9cb8/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>Abbey Road (Remastered)</title>
+    <artist>The Beatles</artist>
+    <id>12047952</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/aa94ab293730bb7845d2aa8c672b2c29/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>Yeezus</title>
+    <artist>Kanye West</artist>
+    <id>6694046</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/5a56530f7906bd9786fa47bd0be421b3/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>Currents</title>
+    <artist>Tame Impala</artist>
+    <id>10709540</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/de5b9b704cd4ec36f8bf49beb3e17ba2/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>Submarine</title>
+    <artist>The Marías</artist>
+    <id>591265602</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/574bd156ad04b9af443cdf6775cfa8c3/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>Blonde</title>
+    <artist>Frank Ocean</artist>
+    <id>104660202</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/f798a866107715dd6dc1049e498ce21f/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>The Bends</title>
+    <artist>Radiohead</artist>
+    <id>14880317</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/0d2ccaf5f7b35af57f3d9c8f4504a6e6/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>The Queen Is Dead</title>
+    <artist>The Smiths</artist>
+    <id>1261474</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/597f59e32186995575850b1539c7e303/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>La La Land (Original Motion Picture Soundtrack)</title>
+    <artist>Justin Hurwitz</artist>
+    <id>14781199</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/6693e6ad39c44db8a408375aded07d5d/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>Gemini Rights</title>
+    <artist>Steve Lacy</artist>
+    <id>333896087</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/3b60918205a5bb30e2b2427714ec3162/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>Random Access Memories</title>
+    <artist>Daft Punk</artist>
+    <id>6575789</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/311bba0fc112d15f72c8b5a65f0456c1/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>Optimist</title>
+    <artist>FINNEAS</artist>
+    <id>264255272</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/60e5619706d4b60717595a793da21a7d/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>OK Computer</title>
+    <artist>Radiohead</artist>
+    <id>14879699</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/05a186e0a859a36f9cd51cdae2158fe1/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>Stranger in the Alps</title>
+    <artist>Phoebe Bridgers</artist>
+    <id>46673272</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/1dc007dfa7ce8eb17289a7722b98d5e9/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>My Beautiful Dark Twisted Fantasy</title>
+    <artist>Kanye West</artist>
+    <id>707965</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/742aba8510ba803bea51d304cf2ca786/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>Another One</title>
+    <artist>Mac DeMarco</artist>
+    <id>10795966</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/a8cc3d9a142cd0119c42eb1aafc974b9/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>Dawn FM</title>
+    <artist>The Weeknd</artist>
+    <id>285758422</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/478a544d29275755b3b8f7b4a1fd7a3c/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>IGOR</title>
+    <artist>Tyler, The Creator</artist>
+    <id>97140952</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/041ab5ceb6fb6ebf9512966835be9e1b/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>Alone At Prom</title>
+    <artist>Tory Lanez</artist>
+    <id>278202372</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/0448c9f88b2b4f63def99d86622e6157/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>Mr. Morale &amp; The Big Steppers</title>
+    <artist>Kendrick Lamar</artist>
+    <id>322019377</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/412361ce41f0bd2595978dbf0e035ad3/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>Graduation</title>
+    <artist>Kanye West</artist>
+    <id>86994002</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/8c6578a2099561992fb7544e6826f767/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>AM</title>
+    <artist>Arctic Monkeys</artist>
+    <id>6899610</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/64e54e307bd5e2bdb27ffeb662fd910d/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>An Evening With Silk Sonic</title>
+    <artist>Bruno Mars</artist>
+    <id>298400782</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/faada8a8c545b2e3d454267b55c82e14/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>SOUR</title>
+    <artist>Olivia Rodrigo</artist>
+    <id>231552772</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/e68da86fd7976135c2d2d1715afaef7c/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+  <album>
+    <title>Narrated For You</title>
+    <artist>Alec Benjamin</artist>
+    <id>78629982</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/1b39d31eb168f517cab66be2991a1abb/250x250-000000-80-0-0.jpg</cover_medium>
+  </album>
+</albums>
