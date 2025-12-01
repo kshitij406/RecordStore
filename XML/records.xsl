@@ -27,7 +27,7 @@
 
           <!-- Navigation Links -->
           <ul class="nav-links">
-            <li><a href="../home.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="records.xml" class="active-link">Collections</a></li>
             <li><a href="../about.html">About Us</a></li>
           </ul>
