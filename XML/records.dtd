@@ -1,1 +1,8 @@
-<?xml version=1.0 encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT records (album+)>
+<!ELEMENT album (title, artist, id, cover_medium)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT artist (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT cover_medium (#PCDATA)>

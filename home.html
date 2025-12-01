@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <title>Home Page</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <!-- Top Navigation -->
   <nav class="topnav">
 
     <!-- Logo -->
     <div class="logo">
-      <a href="home.html"><img src="images/logo.png" alt="Logo" class="logo-image"></a>
+      <a href="home.html">
+        <img src="images/logo.png" alt="Logo" class="logo-image">
+      </a>
     </div>
 
     <!-- Navigation Links -->
     <ul class="nav-links">
-      <li><a href="home.html">Home</a></li>
+      <li><a href="home.html" class="active-link">Home</a></li>
       <li><a href="XML/records.xml">Collections</a></li>
       <li><a href="about.html">About Us</a></li>
     </ul>
@@ -30,78 +34,126 @@
 
   </nav>
 
-  <div class="content">
-    <img src="images/record_shop.jpeg" alt="Record Shop" class="shop-image">
-    <div class="info-section">
-      <div class="aboutus">
-        <h2>ABOUT US</h2>
-        <p>Seraphim Records is your go-to destination for vinyl enthusiasts and music lovers alike. 
-          Established in 1995, we have been curating an extensive collection of records spanning various genres, 
-          from classic rock to contemporary indie. Our passion for music drives us to provide a unique shopping experience, 
-          where customers can explore rare finds, new releases, and timeless classics. 
-          Whether you're a seasoned collector or just starting your vinyl journey, Seraphim Records is here to help you discover the perfect soundtrack for your life.</p>
-      </div>
-    <div class="openingtimes">
-      <table class="opening-hours-table">
-        <thead class="opening-header">
-          <tr>
-            <th colspan="2">OPENING HOURS</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Monday</td>
-            <td>09h00 - 18h30</td>
-          </tr>
-          <tr>
-            <td>Tuesday</td>
-            <td>09h00 - 18h30</td>
-          </tr>
-          <tr>
-            <td>Wednesday</td>
-            <td>09h00 - 18h30</td>
-          </tr>
-          <tr>
-            <td>Thursday</td>
-            <td>09h00 - 18h30</td>
-          </tr>
-          <tr>
-            <td>Friday</td>
-            <td>09h00 - 18h30</td>
-          </tr>
-          <tr>
-            <td>Saturday</td>
-            <td>09h00 - 14h30</td>
-          </tr>
-          <tr>
-            <td>Sunday</td>
-            <td>Closed</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    </div>
-  </div>
+  <!-- Hero Section -->
+  <main class="page">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="hero-tagline">Seraphim Records</p>
+          <h1>PEACE<br>THROUGH<br>MUSIC</h1>
+          <p class="hero-description">
+            Find your next record to spin and fall back into your happy place.
+            Explore rare finds, new releases, and timeless classics.
+          </p>
+          <div class="hero-buttons">
+            <a href="XML/records.xml" class="btn btn-primary">Shop Music</a>
+            <a href="about.html" class="btn btn-outline">Visit Store</a>
+          </div>
+        </div>
 
+        <div class="hero-image-wrapper">
+          <img src="images/Record_Store.gif">
+</video>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Transition Animation Section -->
+    <section class="transition-panel">
+      <div class="transition-inner">
+        <div class="transition-record"></div>
+        <p class="transition-text">Scroll to discover the story behind the sound.</p>
+      </div>
+    </section>
+
+    <!-- About + Opening Hours (fade-in) -->
+    <section class="info-shell">
+      <div class="info-section">
+        <div class="about-block">
+          <h2>ABOUT US</h2>
+          <p>
+            Seraphim Records is your go-to destination for vinyl enthusiasts and music lovers alike.
+            Established in 1995, we have been curating an extensive collection of records spanning various genres,
+            from classic rock to contemporary indie. Our passion for music drives us to provide a unique shopping
+            experience, where customers can explore rare finds, new releases, and timeless classics.
+            Whether you are a seasoned collector or just starting your vinyl journey, Seraphim Records is here to
+            help you discover the perfect soundtrack for your life.
+            <br>
+            <a href="about.html" class="learn-more-link">Learn more</a>
+          </p>
+        </div>
+
+        <div class="hours-block">
+          <h2>OPENING HOURS</h2>
+          <table class="opening-hours-table">
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td>09h00 - 18h30</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>09h00 - 18h30</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>09h00 - 18h30</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>09h00 - 18h30</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>09h00 - 18h30</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>09h00 - 14h30</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer class="footer">
-    <div class="top">
+    <div class="footer-top">
       <div class="social-icons">
         <img src="images/facebook.png" alt="Facebook Icon" class="social-icon">
         <img src="images/instagram.png" alt="Instagram Icon" class="social-icon">
       </div>
-
-      <div class="links">
-
-      </div>
-
-      <div class="contact">
-
-      </div>
     </div>
-    <div class="bottom">
+    <div class="footer-bottom">
       <p>© 2024 Seraphim Records. All rights reserved.</p>
     </div>
-    
   </footer>
+
+  <!-- Simple scroll fade-in for info section -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const infoShell = document.querySelector('.info-shell');
+      if (!infoShell || !('IntersectionObserver' in window)) return;
+
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            infoShell.classList.add('visible');
+            observer.disconnect();
+          }
+        });
+      }, { threshold: 0.2 });
+
+      observer.observe(infoShell);
+    });
+  </script>
 </body>
+
 </html>

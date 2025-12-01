@@ -4,17 +4,21 @@
 
   <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
+  <!-- Main template -->
   <xsl:template match="/">
 
     <html>
       <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
-        <title>Top Albums Collection</title>
+        <title>Record Collection</title>
+
+        <!-- CSS is one level up from XML -->
         <link rel="stylesheet" type="text/css" href="../styles.css"/>
       </head>
 
       <body>
+        <!-- Top Navigation (same as home) -->
         <nav class="topnav">
           <!-- Logo -->
           <div class="logo">
@@ -26,8 +30,8 @@
           <!-- Navigation Links -->
           <ul class="nav-links">
             <li><a href="../home.html">Home</a></li>
-            <li><a href="records.xml">Collections</a></li>
-            <li><a href="../aboutus.html">About Us</a></li>
+            <li><a href="records.xml" class="active-link">Collections</a></li>
+            <li><a href="../about.html">About Us</a></li>
           </ul>
 
           <!-- Search Bar -->
@@ -37,67 +41,78 @@
           </div>
         </nav>
 
-        <h1>Record Collection</h1>
+        <!-- MAIN CONTENT -->
+        <main class="page">
 
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-          <xsl:for-each select="document('top_records.xml')/top_albums/record">
-            <div class="mySlides fade">
-              <img>
-                <xsl:attribute name="src">
-                  <xsl:value-of select="cover_medium"/>
-                </xsl:attribute>
-                <xsl:attribute name="alt">
-                  <xsl:value-of select="name"/>
-                </xsl:attribute>
-              </img>
-              <div class="caption">
-                <xsl:value-of select="name"/>
-                <xsl:text> — </xsl:text>
-                <xsl:value-of select="artist"/>
+          <!-- Hero section: same styling as home hero -->
+          <section class="hero">
+            <div class="hero-inner">
+              <div class="hero-text">
+                <p class="hero-tagline">Seraphim Records</p>
+                <h1>OUR COLLECTIONS</h1>
+                <p class="hero-description">
+                  Browse through our curated catalogue of albums.
+                  Discover classics, hidden gems, and new favourites.
+                </p>
+                <div class="hero-buttons">
+                  <a href="../home.html" class="btn btn-outline">Back Home</a>
+                  <a href="#in-stock" class="btn btn-primary">View Records</a>
+                </div>
+              </div>
+
+              <div class="hero-image-wrapper">
+                <!-- reuse the same hero image or change the file if you want -->
+                <img src="../images/collection.gif" alt="Record wall" class="hero-record-image"/>
               </div>
             </div>
-          </xsl:for-each>
+          </section>
 
-          <!-- Next and previous buttons (ONLY navigation) -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+          <!-- Collections grid on beige background -->
+          <section class="collections-page" id="in-stock">
+            <h2 class="collections-title">In Stock</h2>
 
-        <!-- No dots here -->
+            <div class="product-section">
+              <div class="product-grid">
+                <!-- Loop through all albums from this XML file -->
+                <xsl:for-each select="records/album">
+                  <div class="product-card">
+                    <div class="product-image">
+                      <img>
+                        <xsl:attribute name="src">
+                          <xsl:value-of select="cover_medium"/>
+                        </xsl:attribute>
+                        <xsl:attribute name="alt">
+                          <xsl:value-of select="title"/>
+                        </xsl:attribute>
+                      </img>
+                    </div>
 
-        <!-- Slideshow JS -->
-        <script type="text/javascript">
-        <![CDATA[
-          let slideIndex = 1;
+                    <div class="product-info">
+                      <h3 class="product-title">
+                        <xsl:value-of select="title"/>
+                      </h3>
+                      <p class="product-artist">
+                        <xsl:value-of select="artist"/>
+                      </p>
 
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
+                      <!-- Price will be empty unless you add <price> in XML -->
+                      <p class="product-price">
+                        £<xsl:value-of select="price"/>
+                      </p>
 
-          function showSlides(n) {
-            const slides = document.getElementsByClassName("mySlides");
-            if (slides.length === 0) return;
+                      <button class="product-button product-button-secondary">
+                        View Product
+                      </button>
+                    </div>
+                  </div>
+                </xsl:for-each>
+              </div>
+            </div>
+          </section>
 
-            if (n > slides.length) { slideIndex = 1; }
-            if (n < 1) { slideIndex = slides.length; }
-
-            for (let i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-
-            slides[slideIndex - 1].style.display = "block";
-          }
-
-          document.addEventListener("DOMContentLoaded", function() {
-            showSlides(slideIndex);
-          });
-        ]]>
-        </script>
-
+        </main>
       </body>
     </html>
 
   </xsl:template>
-
 </xsl:stylesheet>

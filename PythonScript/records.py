@@ -1,8 +1,10 @@
 import os
+import random
 import requests
 import xml.etree.ElementTree as ET
 
-XML_FILE = "records.xml"
+# Always point to the XML folder version
+XML_FILE = os.path.join("XML", "records.xml")
 
 albums = [
     {"artist": "Jeff Buckley", "title": "Grace"},
@@ -27,16 +29,14 @@ albums = [
     {"artist": "Tory Lanez", "title": "Alone at Prom"},
     {"artist": "Kendrick Lamar", "title": "Mr. Morale & The Big Steppers"},
     {"artist": "Kanye West", "title": "Graduation"},
-    {"artist": "American Football", "title": "Krystal"},
+    {"artist": "Matt Maltese", "title": "Krystal"},
     {"artist": "Arctic Monkeys", "title": "AM"},
     {"artist": "Silk Sonic", "title": "An Evening with Silk Sonic"},
     {"artist": "Olivia Rodrigo", "title": "SOUR"},
-    {"artist": "NIKI", "title": "These Two Windows"},
+    {"artist": "Alec Benjamin", "title": "These Two Windows"},
     {"artist": "Alec Benjamin", "title": "Narrated for You"}
 ]
 
-
-# LOAD EXISTING XML (if present)
 
 def load_existing_titles():
     """Return a set of titles already in records.xml."""
@@ -48,13 +48,12 @@ def load_existing_titles():
     titles = set()
 
     for album in root.findall("album"):
-        title = album.find("title").text.strip()
-        titles.add(title)
+        title_el = album.find("title")
+        if title_el is not None and title_el.text:
+            titles.add(title_el.text.strip())
 
     return titles
 
-
-# FETCH SINGLE ALBUM FROM DEEZER
 
 def fetch_from_deezer(artist, title):
     query = f"{artist} {title}"
@@ -66,10 +65,17 @@ def fetch_from_deezer(artist, title):
         results = data.get("data", [])
         if results:
             return results[0]
-    except:
-        pass
+    except Exception as e:
+        print("  -> Error calling Deezer:", e)
 
     return None
+
+
+def generate_random_price():
+    """Generate a random price between 12.99 and 39.99, formatted with 2 decimals."""
+    value = random.uniform(12.99, 39.99)
+    return f"{value:.2f}"
+
 
 # Load existing titles
 existing_titles = load_existing_titles()
@@ -103,14 +109,14 @@ for album in albums:
     ET.SubElement(a, "artist").text = result["artist"]["name"]
     ET.SubElement(a, "id").text = str(result["id"])
     ET.SubElement(a, "cover_medium").text = result["cover_medium"]
+    # New: random price
+    ET.SubElement(a, "price").text = generate_random_price()
 
     print("  -> Added:", result["title"])
 
-
-# SAVE XML 
-
+# SAVE XML
 tree = ET.ElementTree(root)
 ET.indent(tree, space="  ", level=0)
-tree.write("XML/records.xml", encoding="utf-8", xml_declaration=True)
+tree.write(XML_FILE, encoding="utf-8", xml_declaration=True)
 
 print("\n✓ records.xml updated successfully!")
