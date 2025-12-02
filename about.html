@@ -1,32 +1,240 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <title>New Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>About Us | Seraphim Records</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="images/store_logo.png" />
 </head>
-<body>
-  <!-- Top Navigation -->
-  <nav class="topnav">
 
-    <!-- Logo -->
+<body>
+  <!-- TOP NAVBAR -->
+  <nav class="topnav">
     <div class="logo">
       <a href="index.html">
-        <img src="images/logo.png" alt="Logo" class="logo-image">
+        <img src="images/store_logo.png" alt="Seraphim Records Logo" class="logo-image" />
       </a>
     </div>
 
-    <!-- Navigation Links -->
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="XML/records.xml">Collections</a></li>
       <li><a href="about.html" class="active-link">About Us</a></li>
     </ul>
 
-    <!-- Search Bar -->
     <div class="searchbar">
-      <img src="images/search-icon(white).png" alt="Search Icon" class="search-icon">
-      <input type="text" placeholder="Search products..." class="search-input">
+      <img src="images/search-icon(white).png" alt="Search Icon" class="search-icon" />
+      <input type="text" placeholder="Search products..." class="search-input" />
     </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="page about-page">
+    <!-- ABOUT HERO / MISSION -->
+    <section class="about-hero">
+      <div class="about-hero-inner">
+        <div class="about-mission">
+          <p class="about-eyebrow">Our Mission</p>
+          <h1>Records that stay with you after the last note.</h1>
+
+          <p>
+            Welcome to <strong>Seraphim Records</strong>, a record store for people who like to
+            slow down, drop the needle and listen on purpose.
+          </p>
+
+          <p>
+            The store brings together albums that feel good to own and to play. From the
+            spacey pull of <em>The Dark Side of the Moon</em> to the bright confidence of
+            <em>Abbey Road</em> and the washed colours of <em>Currents</em>, every title is
+            chosen because it leaves something behind after the music stops.
+          </p>
+
+          <p>
+            Sometimes that is a line like <em>all you touch and all you see</em>, sometimes
+            it is the quiet feeling you get when the last track fades. Either way, our aim
+            is simple: help you leave with music that actually fits your taste and your space.
+          </p>
+        </div>
+
+        <!-- Amoeba / blob image with your GIF -->
+        <div class="about-blob-wrap">
+          <div class="about-blob">
+            <img src="images/about_record.gif" alt="Spinning record" class="about-blob-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS: WHAT WE PROVIDE + VISIT -->
+    <section class="about-highlights">
+      <article class="about-card">
+        <h2>What We Provide</h2>
+        <ul>
+          <li>Vintage and modern vinyl curated for sound and feel</li>
+          <li>Clear details on pressings, editions and reissues</li>
+          <li>Limited and hard to find records for collectors</li>
+          <li>Suggestions based on artists, moods or favourite eras</li>
+          <li>Pre orders and special requests where possible</li>
+        </ul>
+      </article>
+
+      <article class="about-card">
+        <h2>Visit Seraphim Records</h2>
+        <p>
+          <strong>Address</strong><br />
+          Flic en Flac, Middlesex University Mauritius
+        </p>
+        <p>
+          <strong>Opening hours</strong><br />
+          Monday to Saturday: 9 AM to 6 PM
+        </p>
+        <p>
+          <strong>Contact</strong><br />
+          +230 5555 5555<br />
+          info@seraphimrecords.mu
+        </p>
+      </article>
+    </section>
+
+    <!-- STORY / RECORDS SECTION -->
+    <section class="about-story">
+      <div class="about-story-inner">
+        <div class="about-story-text">
+          <p class="about-eyebrow">The Music That Shapes Us</p>
+          <h2>Built around albums that mean something.</h2>
+          <p>
+            The catalogue behind Seraphim Records leans on albums that still get talked
+            about long after release. Records like <em>Grace</em>, <em>Yeezus</em>,
+            <em>Abbey Road</em> and <em>Currents</em> are not just popular, they are
+            reference points. They are the records people play when they want to feel
+            something specific.
+          </p>
+          <p>
+            We treat every new addition through that lens. Does it hold up next to the
+            giants, or at least stand confidently in its own lane? If the answer is yes,
+            it earns a spot in the collection.
+          </p>
+        </div>
+
+        <div class="about-story-blob">
+          <div class="about-blob about-blob-secondary">
+            <img src="images/collection_player.gif" alt="Turntable and record artwork" class="about-blob-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVELOPERS SECTION -->
+    <section class="developers">
+      <h2>Developers</h2>
+      <p class="developers-intro">
+        Seraphim Records is designed and built by three people who care about music,
+        clean layouts and well organised code.
+      </p>
+
+      <div class="developer-grid">
+        <!-- Dev 1 -->
+        <article class="developer-card">
+          <div class="developer-main">
+            <div class="developer-avatar-circle">KJ</div>
+            <div>
+              <h3>Kshitij Jha</h3>
+              <p class="developer-role">Interaction and data flow</p>
+            </div>
+          </div>
+
+          <div class="developer-socials">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="#" target="_blank" rel="noopener">Instagram</a>
+          </div>
+
+          <button class="btn btn-outline dev-toggle" type="button">
+            View card
+          </button>
+
+          <div class="dev-card-details">
+            <p>
+              Works on XML handling, record data and interactions so the store feels
+              smooth and predictable from front to back.
+            </p>
+            <p><strong>Focus</strong>: structure, logic, performance.</p>
+          </div>
+        </article>
+
+        <!-- Dev 2 -->
+        <article class="developer-card">
+          <div class="developer-main">
+            <div class="developer-avatar-circle">KB</div>
+            <div>
+              <h3>Kushal Bhagan</h3>
+              <p class="developer-role">Visual design and layout</p>
+            </div>
+          </div>
+
+          <div class="developer-socials">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="#" target="_blank" rel="noopener">Instagram</a>
+          </div>
+
+          <button class="btn btn-outline dev-toggle" type="button">
+            View card
+          </button>
+
+          <div class="dev-card-details">
+            <p>
+              Shapes the look and feel of Seraphim Records, keeping the amoeba shapes,
+              colours and spacing consistent across pages.
+            </p>
+            <p><strong>Focus</strong>: layout, typography, visual rhythm.</p>
+          </div>
+        </article>
+
+        <!-- Dev 3 -->
+        <article class="developer-card">
+          <div class="developer-main">
+            <div class="developer-avatar-circle">KR</div>
+            <div>
+              <h3>Krishna Ramjeeawon</h3>
+              <p class="developer-role">Content and curation</p>
+            </div>
+          </div>
+
+          <div class="developer-socials">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="#" target="_blank" rel="noopener">Instagram</a>
+          </div>
+
+          <button class="btn btn-outline dev-toggle" type="button">
+            View card
+          </button>
+
+          <div class="dev-card-details">
+            <p>
+              Helps decide which records belong in the catalogue and keeps the copy sharp,
+              simple and on brand.
+            </p>
+            <p><strong>Focus</strong>: content, catalogue, messaging.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // toggle business cards in Developers section
+    document.querySelectorAll(".dev-toggle").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var card = this.closest(".developer-card");
+        card.classList.toggle("show-details");
+      });
+    });
+  </script>
+
+</body>
+
 </html>

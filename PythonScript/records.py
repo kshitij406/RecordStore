@@ -2,9 +2,17 @@ import os
 import random
 import requests
 import xml.etree.ElementTree as ET
+from dotenv import load_dotenv
+
+# CONFIG 
 
 # Always point to the XML folder version
 XML_FILE = os.path.join("XML", "records.xml")
+load_dotenv()
+
+# Spotify API credentials
+CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID", "YOUR_SPOTIFY_CLIENT_ID")
+CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET", "YOUR_SPOTIFY_CLIENT_SECRET")
 
 albums = [
     {"artist": "Jeff Buckley", "title": "Grace"},
@@ -34,8 +42,10 @@ albums = [
     {"artist": "Silk Sonic", "title": "An Evening with Silk Sonic"},
     {"artist": "Olivia Rodrigo", "title": "SOUR"},
     {"artist": "Alec Benjamin", "title": "These Two Windows"},
-    {"artist": "Alec Benjamin", "title": "Narrated for You"}
+    {"artist": "Alec Benjamin", "title": "Narrated for You"},
 ]
+
+# ============= HELPERS =============
 
 
 def load_existing_titles():
@@ -56,11 +66,13 @@ def load_existing_titles():
 
 
 def fetch_from_deezer(artist, title):
+    """Get album data from Deezer (for cover + basic info)."""
     query = f"{artist} {title}"
     url = f"https://api.deezer.com/search/album?q={query}"
 
     try:
         resp = requests.get(url, timeout=10)
+        resp.raise_for_status()
         data = resp.json()
         results = data.get("data", [])
         if results:
@@ -77,46 +89,117 @@ def generate_random_price():
     return f"{value:.2f}"
 
 
-# Load existing titles
-existing_titles = load_existing_titles()
-print("Already in XML:", existing_titles)
+def get_spotify_token(client_id, client_secret):
+    """Get an app access token from Spotify."""
+    url = "https://accounts.spotify.com/api/token"
+    data = {"grant_type": "client_credentials"}
 
-# Prepare XML root (load or create new)
-if os.path.exists(XML_FILE):
-    tree = ET.parse(XML_FILE)
-    root = tree.getroot()
-else:
-    root = ET.Element("records")
+    resp = requests.post(url, data=data, auth=(client_id, client_secret), timeout=10)
+    resp.raise_for_status()
+    return resp.json()["access_token"]
 
-# Process albums
-for album in albums:
-    title = album["title"]
 
-    if title in existing_titles:
-        print(f"Skipping (already exists): {title}")
-        continue
+def fetch_spotify_album_id(artist, title, token):
+    """Search Spotify for the album and return its ID (or None)."""
+    url = "https://api.spotify.com/v1/search"
+    # use album + artist in query to make it precise
+    query = f"album:{title} artist:{artist}"
+    params = {"q": query, "type": "album", "limit": 1}
+    headers = {"Authorization": f"Bearer {token}"}
 
-    print(f"Fetching from Deezer: {album['artist']} - {title}")
-    result = fetch_from_deezer(album["artist"], title)
+    try:
+        resp = requests.get(url, headers=headers, params=params, timeout=10)
+        resp.raise_for_status()
+        data = resp.json()
+        items = data.get("albums", {}).get("items", [])
+        if not items:
+            # fallback: more relaxed query
+            params["q"] = f"{title} {artist}"
+            resp = requests.get(url, headers=headers, params=params, timeout=10)
+            resp.raise_for_status()
+            data = resp.json()
+            items = data.get("albums", {}).get("items", [])
+            if not items:
+                return None
+        return items[0]["id"]
+    except Exception as e:
+        print("  -> Error calling Spotify:", e)
+        return None
 
-    if result is None:
-        print("  -> No result found")
-        continue
 
-    # Create album entry in XML
-    a = ET.SubElement(root, "album")
-    ET.SubElement(a, "title").text = result["title"]
-    ET.SubElement(a, "artist").text = result["artist"]["name"]
-    ET.SubElement(a, "id").text = str(result["id"])
-    ET.SubElement(a, "cover_medium").text = result["cover_medium"]
-    # New: random price
-    ET.SubElement(a, "price").text = generate_random_price()
+# ============= MAIN SCRIPT =============
 
-    print("  -> Added:", result["title"])
+def main():
+    # Load existing titles
+    existing_titles = load_existing_titles()
+    print("Already in XML:", existing_titles)
 
-# SAVE XML
-tree = ET.ElementTree(root)
-ET.indent(tree, space="  ", level=0)
-tree.write(XML_FILE, encoding="utf-8", xml_declaration=True)
+    # Prepare XML root (load or create new)
+    if os.path.exists(XML_FILE):
+        tree = ET.parse(XML_FILE)
+        root = tree.getroot()
+    else:
+        root = ET.Element("records")
+        tree = ET.ElementTree(root)
 
-print("\n✓ records.xml updated successfully!")
+    # Get Spotify token once
+    if CLIENT_ID == "YOUR_SPOTIFY_CLIENT_ID" or CLIENT_SECRET == "YOUR_SPOTIFY_CLIENT_SECRET":
+        print("WARNING: Set SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET (env vars or constants).")
+        spotify_token = None
+    else:
+        try:
+            spotify_token = get_spotify_token(CLIENT_ID, CLIENT_SECRET)
+            print("Spotify token fetched successfully.")
+        except Exception as e:
+            print("Error getting Spotify token:", e)
+            spotify_token = None
+
+    # Process albums
+    for album in albums:
+        title = album["title"]
+        artist = album["artist"]
+
+        if title in existing_titles:
+            print(f"Skipping (already exists): {title}")
+            continue
+
+        print(f"\nFetching from Deezer: {artist} - {title}")
+        deezer_result = fetch_from_deezer(artist, title)
+
+        if deezer_result is None:
+            print("  -> No Deezer result found")
+            continue
+
+        # Create album entry in XML
+        a = ET.SubElement(root, "album")
+        ET.SubElement(a, "title").text = deezer_result["title"]
+        ET.SubElement(a, "artist").text = deezer_result["artist"]["name"]
+        ET.SubElement(a, "id").text = str(deezer_result["id"])
+        ET.SubElement(a, "cover_medium").text = deezer_result["cover_medium"]
+        ET.SubElement(a, "price").text = generate_random_price()
+
+        # Spotify embed (if token available)
+        if spotify_token:
+            print("  -> Searching Spotify…")
+            album_id = fetch_spotify_album_id(artist, title, spotify_token)
+            if album_id:
+                embed_url = f"https://open.spotify.com/embed/album/{album_id}?utm_source=generator"
+                ET.SubElement(a, "spotify_embed").text = embed_url
+                print(f"  -> Spotify album ID found: {album_id}")
+            else:
+                print("  -> No Spotify album found")
+        else:
+            print("  -> Skipping Spotify (no token)")
+
+        print("  -> Added:", deezer_result["title"])
+
+    # SAVE XML
+    ET.indent(tree, space="  ", level=0)
+    os.makedirs(os.path.dirname(XML_FILE), exist_ok=True)
+    tree.write(XML_FILE, encoding="utf-8", xml_declaration=True)
+
+    print("\n✓ records.xml updated successfully!")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!ELEMENT records (album+)>
-<!ELEMENT album (title, artist, id, cover_medium)>
+<!ELEMENT album (title, artist, id, cover_medium, price, spotify_embed)>
+
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT artist (#PCDATA)>
 <!ELEMENT id (#PCDATA)>
 <!ELEMENT cover_medium (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT spotify_embed (#PCDATA)>

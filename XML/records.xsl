@@ -13,6 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
         <title>Record Collection</title>
         <link rel="stylesheet" type="text/css" href="../styles.css"/>
+        <link rel="icon" type="image/x-icon" href="../images/store_logo.png"/>
       </head>
 
       <body>
@@ -20,8 +21,8 @@
         <nav class="topnav">
           <!-- Logo -->
           <div class="logo">
-            <a href="../home.html">
-              <img src="../images/logo.png" alt="Logo" class="logo-image"/>
+            <a href="../index.html">
+              <img src="../images/store_logo.png" alt="Logo" class="logo-image"/>
             </a>
           </div>
 
@@ -59,7 +60,9 @@
               </div>
 
               <div class="hero-image-wrapper">
-                <img src="../images/collection.gif" alt="Record wall" class="hero-record-image"/>
+                <img src="../images/collection_player.gif"
+                     alt="Record wall"
+                     class="hero-record-image"/>
               </div>
             </div>
           </section>
@@ -95,7 +98,17 @@
                         £<xsl:value-of select="price"/>
                       </p>
 
+                      <!-- View Product button with Spotify data attributes -->
                       <button class="product-button product-button-secondary">
+                        <xsl:attribute name="data-title">
+                          <xsl:value-of select="title"/>
+                        </xsl:attribute>
+                        <xsl:attribute name="data-artist">
+                          <xsl:value-of select="artist"/>
+                        </xsl:attribute>
+                        <xsl:attribute name="data-spotify">
+                          <xsl:value-of select="spotify_embed"/>
+                        </xsl:attribute>
                         View Product
                       </button>
                     </div>
@@ -106,6 +119,90 @@
           </section>
 
         </main>
+
+        <!-- Product modal for Spotify embed -->
+        <div id="product-modal" class="product-modal">
+          <div class="product-modal-content">
+            <button class="product-modal-close" type="button">&#215;</button>
+
+            <h3 id="product-modal-title"></h3>
+            <p id="product-modal-artist" class="product-modal-artist"></p>
+
+            <div class="product-modal-player">
+              <iframe
+                id="product-modal-spotify"
+                style="border-radius:12px"
+                src=""
+                width="100%"
+                height="352"
+                frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-top">
+            <div class="social-icons">
+              <img src="../images/facebook.png" alt="Facebook Icon" class="social-icon"/>
+              <img src="../images/instagram.png" alt="Instagram Icon" class="social-icon"/>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>© 2024 Seraphim Records. All rights reserved.</p>
+          </div>
+        </footer>
+
+        <!-- Modal script -->
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var grid = document.querySelector(".product-grid");
+            var modal = document.getElementById("product-modal");
+            var titleEl = document.getElementById("product-modal-title");
+            var artistEl = document.getElementById("product-modal-artist");
+            var iframe = document.getElementById("product-modal-spotify");
+            var closeBtn = document.querySelector(".product-modal-close");
+
+            if (!grid || !modal) return;
+
+            grid.addEventListener("click", function (e) {
+              var btn = e.target.closest(".product-button");
+              if (!btn) return;
+
+              var spotify = btn.getAttribute("data-spotify");
+              if (!spotify) return;
+
+              titleEl.textContent = btn.getAttribute("data-title") || "";
+              artistEl.textContent = btn.getAttribute("data-artist") || "";
+              iframe.src = spotify;
+
+              modal.classList.add("open");
+            });
+
+            function closeModal() {
+              modal.classList.remove("open");
+              iframe.src = "";
+            }
+
+            closeBtn.addEventListener("click", closeModal);
+
+            modal.addEventListener("click", function (e) {
+              if (e.target === modal) {
+                closeModal();
+              }
+            });
+
+            document.addEventListener("keydown", function (e) {
+              if (e.key === "Escape") {
+                closeModal();
+              }
+            });
+          });
+        </script>
+
       </body>
     </html>
 

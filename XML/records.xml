@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
+
 <!DOCTYPE records SYSTEM "records.dtd">
 <?xml-stylesheet type="text/xsl" href="records.xsl"?>
 
@@ -8,195 +9,223 @@
     <artist>Jeff Buckley</artist>
     <id>11336428</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/57dd4754a69acaaf3a8a82f7fd1b8ad3/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>31.64</price>
+    <price>19.23</price>
+    <spotify_embed>https://open.spotify.com/embed/album/7yQtjAjhtNi76KRu05XWFS?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>The Dark Side of the Moon</title>
     <artist>Pink Floyd</artist>
     <id>12114240</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/e635a8510c1a74bc089b3566ebbb9cb8/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>34.11</price>
+    <price>13.07</price>
+    <spotify_embed>https://open.spotify.com/embed/album/4LH4d3cOWNNsVw41Gqt2kv?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>Abbey Road (Remastered)</title>
     <artist>The Beatles</artist>
     <id>12047952</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/aa94ab293730bb7845d2aa8c672b2c29/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>29.36</price>
+    <price>30.07</price>
+    <spotify_embed>https://open.spotify.com/embed/album/0ETFjACtuP2ADo6LFhL6HN?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>Yeezus</title>
     <artist>Kanye West</artist>
     <id>6694046</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/5a56530f7906bd9786fa47bd0be421b3/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>30.25</price>
+    <price>25.47</price>
+    <spotify_embed>https://open.spotify.com/embed/album/7D2NdGvBHIavgLhmcwhluK?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>Currents</title>
     <artist>Tame Impala</artist>
     <id>10709540</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/de5b9b704cd4ec36f8bf49beb3e17ba2/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>13.83</price>
+    <price>25.17</price>
+    <spotify_embed>https://open.spotify.com/embed/album/79dL7FLiJFOO0EoehUHQBv?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>Submarine</title>
     <artist>The Marías</artist>
     <id>591265602</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/574bd156ad04b9af443cdf6775cfa8c3/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>35.01</price>
+    <price>33.54</price>
+    <spotify_embed>https://open.spotify.com/embed/album/03guxdOi12XJbnvxvxbpwG?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>Blonde</title>
     <artist>Frank Ocean</artist>
     <id>104660202</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/f798a866107715dd6dc1049e498ce21f/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>20.16</price>
+    <price>19.51</price>
+    <spotify_embed>https://open.spotify.com/embed/album/3mH6qwIy9crq0I9YQbOuDf?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>The Bends</title>
     <artist>Radiohead</artist>
     <id>14880317</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/0d2ccaf5f7b35af57f3d9c8f4504a6e6/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>38.90</price>
+    <price>25.62</price>
+    <spotify_embed>https://open.spotify.com/embed/album/35UJLpClj5EDrhpNIi4DFg?utm_source=generator</spotify_embed>
   </album>
   <album>
-    <title>The Queen Is Dead</title>
+    <title>The Queen Is Dead (Deluxe Edition)</title>
     <artist>The Smiths</artist>
-    <id>1261474</id>
-    <cover_medium>https://cdn-images.dzcdn.net/images/cover/597f59e32186995575850b1539c7e303/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>30.30</price>
+    <id>49722702</id>
+    <cover_medium>https://cdn-images.dzcdn.net/images/cover/8fbb2d7d0b51c4e74fd3c99b680abc10/250x250-000000-80-0-0.jpg</cover_medium>
+    <price>39.50</price>
+    <spotify_embed>https://open.spotify.com/embed/album/5Y0p2XCgRRIjna91aQE8q7?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>La La Land (Original Motion Picture Soundtrack)</title>
     <artist>Justin Hurwitz</artist>
     <id>14781199</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/6693e6ad39c44db8a408375aded07d5d/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>21.79</price>
+    <price>37.19</price>
+    <spotify_embed>https://open.spotify.com/embed/album/3GU8BzFEAdFSRjc8jZkL3S?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>Gemini Rights</title>
     <artist>Steve Lacy</artist>
     <id>333896087</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/3b60918205a5bb30e2b2427714ec3162/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>32.29</price>
+    <price>19.52</price>
+    <spotify_embed>https://open.spotify.com/embed/album/3Ks0eeH0GWpY4AU20D5HPD?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>Random Access Memories</title>
     <artist>Daft Punk</artist>
     <id>6575789</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/311bba0fc112d15f72c8b5a65f0456c1/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>27.10</price>
+    <price>27.37</price>
+    <spotify_embed>https://open.spotify.com/embed/album/4m2880jivSbbyEGAKfITCa?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>Optimist</title>
     <artist>FINNEAS</artist>
     <id>264255272</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/60e5619706d4b60717595a793da21a7d/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>26.37</price>
+    <price>16.35</price>
+    <spotify_embed>https://open.spotify.com/embed/album/3KChz6qdEH9AfHE6VCBshZ?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>OK Computer</title>
     <artist>Radiohead</artist>
     <id>14879699</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/05a186e0a859a36f9cd51cdae2158fe1/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>14.92</price>
+    <price>33.79</price>
+    <spotify_embed>https://open.spotify.com/embed/album/6dVIqQ8qmQ5GBnJ9shOYGE?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>Stranger in the Alps</title>
     <artist>Phoebe Bridgers</artist>
     <id>46673272</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/1dc007dfa7ce8eb17289a7722b98d5e9/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>29.53</price>
+    <price>18.04</price>
+    <spotify_embed>https://open.spotify.com/embed/album/0qWcLfCZ8wtcoOdX14oGNI?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>My Beautiful Dark Twisted Fantasy</title>
     <artist>Kanye West</artist>
     <id>707965</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/742aba8510ba803bea51d304cf2ca786/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>14.77</price>
+    <price>22.05</price>
+    <spotify_embed>https://open.spotify.com/embed/album/20r762YmB5HeofjMCiPMLv?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>Another One</title>
     <artist>Mac DeMarco</artist>
     <id>10795966</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/a8cc3d9a142cd0119c42eb1aafc974b9/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>23.56</price>
+    <price>17.42</price>
+    <spotify_embed>https://open.spotify.com/embed/album/5FiDVzxLqGtYjF5yzmMoj4?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>Dawn FM</title>
     <artist>The Weeknd</artist>
     <id>285758422</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/478a544d29275755b3b8f7b4a1fd7a3c/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>22.02</price>
+    <price>23.96</price>
+    <spotify_embed>https://open.spotify.com/embed/album/2nLOHgzXzwFEpl62zAgCEC?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>IGOR</title>
     <artist>Tyler, The Creator</artist>
     <id>97140952</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/041ab5ceb6fb6ebf9512966835be9e1b/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>18.42</price>
+    <price>26.09</price>
+    <spotify_embed>https://open.spotify.com/embed/album/5zi7WsKlIiUXv09tbGLKsE?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>Alone At Prom</title>
     <artist>Tory Lanez</artist>
     <id>278202372</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/0448c9f88b2b4f63def99d86622e6157/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>39.43</price>
+    <price>23.37</price>
+    <spotify_embed>https://open.spotify.com/embed/album/5Gm2XKBgnlzd6qTi7LE1z2?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>Mr. Morale &amp; The Big Steppers</title>
     <artist>Kendrick Lamar</artist>
     <id>322019377</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/412361ce41f0bd2595978dbf0e035ad3/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>23.16</price>
+    <price>15.78</price>
+    <spotify_embed>https://open.spotify.com/embed/album/79ONNoS4M9tfIA1mYLBYVX?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>Graduation</title>
     <artist>Kanye West</artist>
     <id>86994002</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/8c6578a2099561992fb7544e6826f767/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>27.90</price>
+    <price>27.01</price>
+    <spotify_embed>https://open.spotify.com/embed/album/4SZko61aMnmgvNhfhgTuD3?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>Krystal</title>
     <artist>Matt Maltese</artist>
     <id>290529762</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/79abb46185f526fd421be16258037bd4/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>18.36</price>
+    <price>31.11</price>
+    <spotify_embed>https://open.spotify.com/embed/album/0DMKZZanrzK36YjFyI5nfF?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>AM</title>
     <artist>Arctic Monkeys</artist>
     <id>6899610</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/64e54e307bd5e2bdb27ffeb662fd910d/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>16.23</price>
+    <price>19.85</price>
+    <spotify_embed>https://open.spotify.com/embed/album/78bpIziExqiI9qztvNFlQu?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>An Evening With Silk Sonic</title>
     <artist>Bruno Mars</artist>
     <id>298400782</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/faada8a8c545b2e3d454267b55c82e14/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>26.27</price>
+    <price>22.69</price>
+    <spotify_embed>https://open.spotify.com/embed/album/1YgekJJTEueWDaMr7BYqPk?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>SOUR</title>
     <artist>Olivia Rodrigo</artist>
     <id>231552772</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/e68da86fd7976135c2d2d1715afaef7c/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>28.36</price>
+    <price>39.51</price>
+    <spotify_embed>https://open.spotify.com/embed/album/6s84u2TUpR3wdUv4NgKA2j?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>These Two Windows</title>
     <artist>Alec Benjamin</artist>
     <id>150826712</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/6bda3e59843e190a76274515ecb2458f/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>29.84</price>
+    <price>13.48</price>
+    <spotify_embed>https://open.spotify.com/embed/album/3SzqS1H5dj8f450YhV9YbP?utm_source=generator</spotify_embed>
   </album>
   <album>
     <title>Narrated For You</title>
     <artist>Alec Benjamin</artist>
     <id>78629982</id>
     <cover_medium>https://cdn-images.dzcdn.net/images/cover/1b39d31eb168f517cab66be2991a1abb/250x250-000000-80-0-0.jpg</cover_medium>
-    <price>22.59</price>
+    <price>17.37</price>
+    <spotify_embed>https://open.spotify.com/embed/album/6jKZplJpy21R5lHaYHHjmZ?utm_source=generator</spotify_embed>
   </album>
 </records>
