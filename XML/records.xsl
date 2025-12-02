@@ -156,7 +156,7 @@
           </div>
         </footer>
 
-        <!-- Modal script -->
+        <!-- Modal + search script -->
         <script>
           document.addEventListener("DOMContentLoaded", function () {
             var grid = document.querySelector(".product-grid");
@@ -165,9 +165,11 @@
             var artistEl = document.getElementById("product-modal-artist");
             var iframe = document.getElementById("product-modal-spotify");
             var closeBtn = document.querySelector(".product-modal-close");
+            var searchInput = document.querySelector(".search-input");
 
             if (!grid || !modal) return;
 
+            // Open modal when "View Product" is clicked
             grid.addEventListener("click", function (e) {
               var btn = e.target.closest(".product-button");
               if (!btn) return;
@@ -182,12 +184,15 @@
               modal.classList.add("open");
             });
 
+            // Close modal
             function closeModal() {
               modal.classList.remove("open");
               iframe.src = "";
             }
 
-            closeBtn.addEventListener("click", closeModal);
+            if (closeBtn) {
+              closeBtn.addEventListener("click", closeModal);
+            }
 
             modal.addEventListener("click", function (e) {
               if (e.target === modal) {
@@ -200,6 +205,23 @@
                 closeModal();
               }
             });
+
+            // Simple search: filter cards by title or artist
+            if (searchInput) {
+              searchInput.addEventListener("input", function () {
+                var query = this.value.toLowerCase();
+                var cards = grid.querySelectorAll(".product-card");
+
+                cards.forEach(function (card) {
+                  var text =
+                    (card.querySelector(".product-title").textContent + " " +
+                     card.querySelector(".product-artist").textContent
+                    ).toLowerCase();
+
+                  card.style.display = text.indexOf(query) !== -1 ? "" : "none";
+                });
+              });
+            }
           });
         </script>
 
