@@ -561,7 +561,7 @@ body {
 
 .about-blob-img {
   display: block;
-  width: 260px;
+  width: 500px;
   height: auto;
   border-radius: 55% 45% 60% 40% / 50% 55% 45% 50%;
 }
