@@ -99,7 +99,7 @@
                       </p>
 
                       <!-- View Product button with Spotify data attributes -->
-                      <button class="product-button product-button-secondary">
+                      <button class="product-button product-button-primary">
                         <xsl:attribute name="data-title">
                           <xsl:value-of select="title"/>
                         </xsl:attribute>
@@ -109,7 +109,7 @@
                         <xsl:attribute name="data-spotify">
                           <xsl:value-of select="spotify_embed"/>
                         </xsl:attribute>
-                        View Product
+                       Preview Album
                       </button>
                     </div>
                   </div>
@@ -147,7 +147,7 @@
         <footer class="footer">
           <div class="footer-top">
             <div class="social-icons">
-              <img src="../images/facebook.png" alt="Facebook Icon" class="social-icon"/>
+              <img src="../images/Facebook.png" alt="Facebook Icon" class="social-icon"/>
               <img src="../images/instagram.png" alt="Instagram Icon" class="social-icon"/>
             </div>
           </div>

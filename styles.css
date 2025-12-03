@@ -483,23 +483,6 @@ body {
   width: 100%;
 }
 
-/* MISC / RESPONSIVE */
-.refresh-button {
-  margin-left: 10px;
-  padding: 4px 10px;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  border-radius: 999px;
-  border: 1px solid #000;
-  background-color: #fff;
-  cursor: pointer;
-}
-
-.refresh-button:hover {
-  background-color: #000;
-  color: #fff;
-}
-
 /* ABOUT PAGE */
 .about-page {
   padding-top: 90px;
