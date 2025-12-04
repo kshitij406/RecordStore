@@ -54,7 +54,7 @@
                   Discover classics, hidden gems, and new favourites.
                 </p>
                 <div class="hero-buttons">
-                  <a href="../home.html" class="btn btn-outline">Back Home</a>
+                  <a href="../index.html" class="btn btn-outline">Back Home</a>
                   <a href="#in-stock" class="btn btn-primary">View Records</a>
                 </div>
               </div>
