@@ -42,31 +42,31 @@
 
         <!-- MAIN CONTENT -->
         <main class="page">
+          <main class ="collections-page-top">
+            <!-- Hero section -->
+            <section class="hero">
+              <div class="hero-inner">
+                <div class="hero-text">
+                  <p class="hero-tagline">Seraphim Records</p>
+                  <h1>OUR COLLECTIONS</h1>
+                  <p class="hero-description">
+                    Browse through our curated catalogue of albums.
+                    Discover classics, hidden gems, and new favourites.
+                  </p>
+                  <div class="hero-buttons">
+                    <a href="../index.html" class="btn btn-outline">Back Home</a>
+                    <a href="#in-stock" class="btn btn-primary">View Records</a>
+                  </div>
+                </div>
 
-          <!-- Hero section -->
-          <section class="hero">
-            <div class="hero-inner">
-              <div class="hero-text">
-                <p class="hero-tagline">Seraphim Records</p>
-                <h1>OUR COLLECTIONS</h1>
-                <p class="hero-description">
-                  Browse through our curated catalogue of albums.
-                  Discover classics, hidden gems, and new favourites.
-                </p>
-                <div class="hero-buttons">
-                  <a href="../index.html" class="btn btn-outline">Back Home</a>
-                  <a href="#in-stock" class="btn btn-primary">View Records</a>
+                <div class="hero-image-wrapper">
+                  <img src="../images/collection_player.gif"
+                      alt="Record wall"
+                      class="hero-record-image"/>
                 </div>
               </div>
-
-              <div class="hero-image-wrapper">
-                <img src="../images/collection_player.gif"
-                     alt="Record wall"
-                     class="hero-record-image"/>
-              </div>
-            </div>
-          </section>
-
+            </section>
+          </main>
           <!-- Collections grid on beige background -->
           <section class="collections-page" id="in-stock">
             <h2 class="collections-title">In Stock</h2>
